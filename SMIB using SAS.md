@@ -25,7 +25,7 @@ $$\theta(t) = \sum_{n=0}^{\infty} a_n t^n$$
 
 ### Step 3: Apply the Differential Transformation
 - Calculate $\frac{d\theta}{dt}$ and $\frac{d^2\theta}{dt^2}$ using the basis function expression and substitute them into the differential equation:
-  $$  \frac{d^2\theta}{dt^2} = \sum_{n=0}^{\infty} a_n n(n-1) t^{n-2}  $$
+  $$\frac{d^2\theta}{dt^2} = \sum_{n=0}^{\infty} a_n n(n-1) t^{n-2}$$
 - Equate the right-hand side of the differential equation to $P_m - P_e$.
 - This results in a recurrence relation for the coefficients $a_n$.
 
@@ -35,7 +35,7 @@ $$\theta(t) = \sum_{n=0}^{\infty} a_n t^n$$
 
 ### Step 5: Construct the Solution
 - Once you have the coefficients $a_n$, construct the solution $\theta(t)$ using the basis function expression:
-  $$  \theta(t) = \sum_{n=0}^{\infty} a_n t^n  $$
+  $$\theta(t) = \sum_{n=0}^{\infty} a_n t^n$$
 
 ## Conclusion
 You have now successfully derived a semi-analytical solution for the SMIB system using the Differential Transformation Method (DTM). This approach provides an approximation to the solution and can be a valuable tool for solving differential equations in various fields of science and engineering.
