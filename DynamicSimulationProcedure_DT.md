@@ -2,34 +2,34 @@ In [DynamicSimulationProcedure_General](DynamicSimulationProcedure_General.md), 
 
 # Basics of DT method
 
-![IdeaOfDT](IdeaOfDT.png)
+![IdeaOfDT](Images\IdeaOfDT.png)
 
 Additional transformation rules for more complicated operations? 
 + will be added later
 
 # Procedure of DT method for solving DAE model
-![IdeaOfDT_DAE](IdeaOfDT_DAE.png)  
+![IdeaOfDT_DAE](Images\IdeaOfDT_DAE.png)  
 
 
 # Example
 Consider the DAE model for the 3-machine 9-bus system.
-![DAE model of 3-machine 9-bus system](3m9bDAEmodel.png)  
+![DAE model of 3-machine 9-bus system](Images\3m9bDAEmodel.png)  
 
 The DT method will apply term-by-term transformation rules to convert the original DAEs into difference equations. This transformation step is performed offline.
 
-![DTof3m9bDAEmodel](DTof3m9bDAEmodel.png)  
+![DTof3m9bDAEmodel](Images\DTof3m9bDAEmodel.png)  
 
 The equation above is further restructured into the following linear form. (Note: There is potential to directly transform the DAE into this form to streamline the process, and we will investigate its implementation feasibility.)
 
-![DTof3m9bDAEmodel_FormallyLinear](DTof3m9bDAEmodel_FormallyLinear.png)  
+![DTof3m9bDAEmodel_FormallyLinear](Images\DTof3m9bDAEmodel_FormallyLinear.png)  
 
 Following that, we can recursively solve for the coefficients and derive the Taylor series solution. 
 
-![SolveDAE_DT_Coefficients](SolveDAE_DT_Coefficients.png)
+![SolveDAE_DT_Coefficients](Images\SolveDAE_DT_Coefficients.png)
 
 You can find the algorithms for solving the coefficients illustrated in the figure below.
 
-![DT_DAEalgorithm](DT_DAEalgorithm.png)
+![DT_DAEalgorithm](Images\DT_DAEalgorithm.png)
 
 # Challenges associated with the SAS methods (including DT)
 
