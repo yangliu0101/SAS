@@ -100,7 +100,7 @@ Contingency:
 + Do not consider contingency. We can directly provide a disturbed initial values for simulation  
 
 
-![3-machine 9-bus system](3m9b.png)
+![3-machine 9-bus system](Images\3m9b.png)
 
 ### Model Structure 
 Let's first write down the full DAE model, which includes three major components.  
@@ -109,17 +109,17 @@ Let's first write down the full DAE model, which includes three major components
 3. Network balance equation  
 
 
-![DAE model of 3-machine 9-bus system](3m9bDAEmodel.png)  
+![DAE model of 3-machine 9-bus system](Images\3m9bDAEmodel.png)  
 
 I've structured the equations in a manner that explicitly delineates the current injection equations. Notably, the current injection equation, denoted as $i(x,v)$, entails a rather intricate expression, for both generators and loads. To facilitate understanding, I've introduced some notations. For a comprehensive understanding of how these notations relate to the original model parameters, please refer to the image below:  
 
 Notations in generator bus current injections:  
 
-![OrganizeGenCurrentInjectionEqu](OrganizeGenCurrentInjectionEqu.png)
+![OrganizeGenCurrentInjectionEqu](Images\OrganizeGenCurrentInjectionEqu.png)
 
 Notations in load bus current injections:  
 
-![OrganizeLoadCurrentInjectionEqu](OrganizeLoadCurrentInjectionEqu.png)
+![OrganizeLoadCurrentInjectionEqu](Images\OrganizeLoadCurrentInjectionEqu.png)
 
 
 Traditional textbooks typically do not employ this organization method because it is unnecessary for traditional numerical approaches. They often present multiple equations sequentially without explicitly illustrating the relationships between current injection, voltage, and state variables. I've chosen this explicit and lucid approach because it's a necessity for the Semi-Analytical Solution (SAS) method, which relies on a clear expression and performs **term-by-term** symbolic operations. 
